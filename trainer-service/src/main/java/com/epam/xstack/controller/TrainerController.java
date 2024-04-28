@@ -37,7 +37,7 @@ public class TrainerController {
         return new ResponseEntity<>(trainerService.deleteTrainer(id), HttpStatus.OK);
     }
 
-    @PostMapping("/workload")
+    @PostMapping
     public ResponseEntity<TrainerResponseDTO> updateTrainerWorkload(@RequestBody TrainerRequestDTO request) {
         log.info("Method update in Trainer Controller is ended");
         return new ResponseEntity<>(trainerService.updateTrainerWorkload(request), HttpStatus.OK);
